@@ -1,0 +1,53 @@
+body{
+    background-color: rgb(99, 99, 99);
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .progress-bar {
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    height: 8px;
+    width: 20%;
+    margin-bottom: 20px;
+  }
+  .progress {
+    background-color: #FF8C00;
+    border-radius: 10px;
+    height: 100%;
+    transition: width 0.5s ease;
+    box-shadow: 0px 0px 5px #FFA07A;
+  }
+  .progress::after {
+    content: "";
+    position: absolute;
+    right: -10px;
+    top: -6px;
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 10px solid #FF8C00;
+  }
+  .buttons {
+    display: flex;
+  }
+  button {
+    background-color: #FF8C00;
+    border-radius: 5px;
+    border: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+  }
+  button:hover {
+    background-color: #FFA07A;
+  }
+  
